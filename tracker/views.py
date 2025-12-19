@@ -21,3 +21,32 @@ def signup(request):
         return redirect('/accounts/login/')
 
     return render(request, 'registration/signup.html')
+from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
+
+def signup(request):
+    return render(request, 'registration/signup.html')
+
+@login_required
+def home(request):
+    return render(request, 'home.html')
+
+@login_required
+def userprofile(request):
+    return render(request, 'userprofile.html')
+
+@login_required
+def checkin(request):
+    return render(request, 'checkin.html')
+
+@login_required
+def goals(request):
+    return render(request, 'goals.html')
+
+@login_required
+def reminders(request):
+    return render(request, 'reminders.html')
+
+@login_required
+def setting(request):
+    return render(request, 'setting.html')

@@ -1,6 +1,12 @@
 from django.urls import path
-from .views import signup
+from . import views
 
 urlpatterns = [
-    path('signup/', signup, name='signup'),
+    path('', views.home, name='home'),
+    path('signup/', views.signup, name='signup'),
+    path('profile/', views.userprofile, name='userprofile'),
+    path('checkin/', views.checkin, name='checkin'),
+    path('goals/', views.goals, name='goals'),
+    path('reminders/', views.reminders, name='reminders'),
+    path('setting/', views.setting, name='setting'),
 ]
