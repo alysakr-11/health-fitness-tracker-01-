@@ -258,7 +258,7 @@ Ali
 
 Computer Science Student
 
-University Project – Health \& Fitness Tracker
+University Project – Health \& Fitness Tracker 
 
 
 
